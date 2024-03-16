@@ -1,0 +1,10 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/x64/ninja -G Ninja -S "/Users/mac/Desktop/Computer Science/רשתות תקשורת/network_ex3-master" -B "/Users/mac/Desktop/Computer Science/רשתות תקשורת/network_ex3-master/cmake-build-debug"
+-- The C compiler identification is AppleClang 15.0.0.15000100
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done (1.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/mac/Desktop/Computer Science/רשתות תקשורת/network_ex3-master/cmake-build-debug
