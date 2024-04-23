@@ -1,0 +1,437 @@
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6145 -algo reno
+Listening for incoming connections on port 6145...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=0.77 ms ; Speed=2604.17MB/s 
+
+Run #2 Data: Time=0.67 ms ; Speed=2967.36MB/s 
+
+Run #3 Data: Time=0.44 ms ; Speed=4494.38MB/s 
+
+Run #4 Data: Time=0.39 ms ; Speed=5102.04MB/s 
+
+Run #5 Data: Time=0.46 ms ; Speed=4376.37MB/s 
+
+- Average time: 0.55 ms
+- Average bandwidth: 3908.86 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6144 -algo reno
+Listening for incoming connections on port 6144...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=1.09 ms ; Speed=1834.86MB/s 
+
+Run #2 Data: Time=0.48 ms ; Speed=4132.23MB/s 
+
+Run #3 Data: Time=0.74 ms ; Speed=2702.70MB/s 
+
+Run #4 Data: Time=0.67 ms ; Speed=3003.00MB/s 
+
+Run #5 Data: Time=0.98 ms ; Speed=2047.08MB/s 
+
+- Average time: 0.79 ms
+- Average bandwidth: 2743.98 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ sudo tc qdisc add dev lo root netem loss 2%
+Error: Exclusivity flag on, cannot modify.
+gidi@gidi:~/Desktop/Assignment3/Part A$ sudo tc qdisc show dev lo
+qdisc netem 8001: root refcnt 2 limit 1000
+gidi@gidi:~/Desktop/Assignment3/Part A$ sudo tc qdisc change dev lo root netem loss 2%
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6144 -algo reno
+Listening for incoming connections on port 6144...
+^[[A^[[B^[[B^Z
+[4]+  Stopped                 ./TCP_Receiver -p 6144 -algo reno
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6143 -algo reno
+Listening for incoming connections on port 6143...
+^Z
+[5]+  Stopped                 ./TCP_Receiver -p 6143 -algo reno
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6143 -algo reno
+bind(2): Address already in use
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6142 -algo reno
+Listening for incoming connections on port 6142...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=0.70 ms ; Speed=2853.07MB/s 
+
+Run #2 Data: Time=0.51 ms ; Speed=3944.77MB/s 
+
+Run #3 Data: Time=0.58 ms ; Speed=3454.23MB/s 
+
+Run #4 Data: Time=0.61 ms ; Speed=3257.33MB/s 
+
+Run #5 Data: Time=0.60 ms ; Speed=3311.26MB/s 
+
+- Average time: 0.60 ms
+- Average bandwidth: 3364.13 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ sudo tc qdisc change dev lo root netem loss 5%
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6142 -algo reno
+Listening for incoming connections on port 6142...
+^[[A^[[A^Z
+[6]+  Stopped                 ./TCP_Receiver -p 6142 -algo reno
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6142 -algo reno
+bind(2): Address already in use
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo reno
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=0.79 ms ; Speed=2531.65MB/s 
+
+Run #2 Data: Time=0.64 ms ; Speed=3129.89MB/s 
+
+Run #3 Data: Time=0.60 ms ; Speed=3322.26MB/s 
+
+Run #4 Data: Time=0.66 ms ; Speed=3012.05MB/s 
+
+Run #5 Data: Time=0.78 ms ; Speed=2580.65MB/s 
+
+- Average time: 0.69 ms
+- Average bandwidth: 2915.30 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ sudo tc qdisc change dev lo root netem loss 10%
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo reno
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=0.65 ms ; Speed=3081.66MB/s 
+
+Run #2 Data: Time=0.50 ms ; Speed=3992.02MB/s 
+
+Run #3 Data: Time=0.76 ms ; Speed=2621.23MB/s 
+
+Run #4 Data: Time=0.60 ms ; Speed=3322.26MB/s 
+
+Run #5 Data: Time=0.57 ms ; Speed=3508.77MB/s 
+
+- Average time: 0.62 ms
+- Average bandwidth: 3305.19 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo reno
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=0.60 ms ; Speed=3327.79MB/s 
+
+Run #2 Data: Time=0.53 ms ; Speed=3759.40MB/s 
+
+Run #3 Data: Time=0.71 ms ; Speed=2824.86MB/s 
+
+Run #4 Data: Time=0.69 ms ; Speed=2894.36MB/s 
+
+Run #5 Data: Time=0.68 ms ; Speed=2962.96MB/s 
+
+- Average time: 0.64 ms
+- Average bandwidth: 3153.87 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ sudo tc qdisc change dev lo root netem loss 5%
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo reno
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=0.63 ms ; Speed=3194.89MB/s 
+
+Run #2 Data: Time=0.52 ms ; Speed=3838.77MB/s 
+
+Run #3 Data: Time=0.51 ms ; Speed=3937.01MB/s 
+
+Run #4 Data: Time=0.62 ms ; Speed=3205.13MB/s 
+
+Run #5 Data: Time=0.79 ms ; Speed=2531.65MB/s 
+
+- Average time: 0.61 ms
+- Average bandwidth: 3341.49 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ sudo tc qdisc change dev lo root netem loss 2%
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo reno
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=0.99 ms ; Speed=2028.40MB/s 
+
+Run #2 Data: Time=0.62 ms ; Speed=3241.49MB/s 
+
+Run #3 Data: Time=0.55 ms ; Speed=3669.72MB/s 
+
+Run #4 Data: Time=0.57 ms ; Speed=3496.50MB/s 
+
+Run #5 Data: Time=0.77 ms ; Speed=2610.97MB/s 
+
+- Average time: 0.70 ms
+- Average bandwidth: 3009.42 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ sudo tc qdisc change dev lo root netem loss 0%
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo reno
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=1.21 ms ; Speed=1657.00MB/s 
+
+Run #2 Data: Time=0.64 ms ; Speed=3129.89MB/s 
+
+Run #3 Data: Time=0.73 ms ; Speed=2739.73MB/s 
+
+Run #4 Data: Time=0.72 ms ; Speed=2758.62MB/s 
+
+Run #5 Data: Time=0.60 ms ; Speed=3311.26MB/s 
+
+- Average time: 0.78 ms
+- Average bandwidth: 2719.30 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo cubic
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=0.92 ms ; Speed=2178.65MB/s 
+
+Run #2 Data: Time=0.61 ms ; Speed=3267.97MB/s 
+
+Run #3 Data: Time=0.76 ms ; Speed=2635.05MB/s 
+
+Run #4 Data: Time=0.58 ms ; Speed=3466.20MB/s 
+
+Run #5 Data: Time=0.69 ms ; Speed=2915.45MB/s 
+
+- Average time: 0.71 ms
+- Average bandwidth: 2892.67 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ sudo tc qdisc change dev lo root netem loss 2%
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo cubic
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=1.17 ms ; Speed=1703.58MB/s 
+
+Run #2 Data: Time=0.56 ms ; Speed=3558.72MB/s 
+
+Run #3 Data: Time=0.57 ms ; Speed=3502.63MB/s 
+
+Run #4 Data: Time=0.55 ms ; Speed=3669.72MB/s 
+
+Run #5 Data: Time=0.53 ms ; Speed=3745.32MB/s 
+
+- Average time: 0.68 ms
+- Average bandwidth: 3235.99 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ sudo tc qdisc change dev lo root netem loss 5%
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo cubic
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=0.87 ms ; Speed=2296.21MB/s 
+
+Run #2 Data: Time=0.54 ms ; Speed=3738.32MB/s 
+
+Run #3 Data: Time=0.63 ms ; Speed=3154.57MB/s 
+
+Run #4 Data: Time=0.79 ms ; Speed=2525.25MB/s 
+
+Run #5 Data: Time=0.57 ms ; Speed=3514.94MB/s 
+
+- Average time: 0.68 ms
+- Average bandwidth: 3045.86 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ sudo tc qdisc change dev lo root netem loss 10%
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo cubic
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=1.28 ms ; Speed=1560.06MB/s 
+
+Run #2 Data: Time=0.75 ms ; Speed=2670.23MB/s 
+
+Run #3 Data: Time=0.64 ms ; Speed=3144.65MB/s 
+
+Run #4 Data: Time=0.66 ms ; Speed=3044.14MB/s 
+
+Run #5 Data: Time=0.98 ms ; Speed=2036.66MB/s 
+
+- Average time: 0.86 ms
+- Average bandwidth: 2491.15 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo cubic
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=0.69 ms ; Speed=2881.84MB/s 
+
+- Average time: 0.69 ms
+- Average bandwidth: 2881.84 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo cubic
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=0.42 ms ; Speed=4728.13MB/s 
+
+Run #2 Data: Time=0.59 ms ; Speed=3367.00MB/s 
+
+Run #3 Data: Time=0.66 ms ; Speed=3044.14MB/s 
+
+Run #4 Data: Time=1.05 ms ; Speed=1908.40MB/s 
+
+Run #5 Data: Time=0.79 ms ; Speed=2531.65MB/s 
+
+- Average time: 0.70 ms
+- Average bandwidth: 3115.86 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ sudo tc qdisc change dev lo root netem loss 5%
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo cubic
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=1.32 ms ; Speed=1514.00MB/s 
+
+Run #2 Data: Time=0.72 ms ; Speed=2789.40MB/s 
+
+Run #3 Data: Time=0.51 ms ; Speed=3898.64MB/s 
+
+Run #4 Data: Time=0.88 ms ; Speed=2285.71MB/s 
+
+Run #5 Data: Time=0.62 ms ; Speed=3241.49MB/s 
+
+- Average time: 0.81 ms
+- Average bandwidth: 2745.85 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ sudo tc qdisc change dev lo root netem loss 2%
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo cubic
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=1.06 ms ; Speed=1888.57MB/s 
+
+Run #2 Data: Time=0.75 ms ; Speed=2656.04MB/s 
+
+Run #3 Data: Time=0.54 ms ; Speed=3717.47MB/s 
+
+Run #4 Data: Time=0.90 ms ; Speed=2234.64MB/s 
+
+Run #5 Data: Time=0.73 ms ; Speed=2747.25MB/s 
+
+- Average time: 0.79 ms
+- Average bandwidth: 2648.80 MB/s
+------------------------------------------------
+Receiver end.
+gidi@gidi:~/Desktop/Assignment3/Part A$ sudo tc qdisc change dev lo root netem loss 0%
+gidi@gidi:~/Desktop/Assignment3/Part A$ ./TCP_Receiver -p 6141 -algo cubic
+Listening for incoming connections on port 6141...
+Sender connected, beginning to receive file..
+Sender sent EXIT message 
+
+
+------------------------------------------------
+		 * Statistics * 		
+
+Run #1 Data: Time=0.90 ms ; Speed=2232.14MB/s 
+
+Run #2 Data: Time=0.63 ms ; Speed=3154.57MB/s 
+
+Run #3 Data: Time=0.56 ms ; Speed=3546.10MB/s 
+
+Run #4 Data: Time=0.38 ms ; Speed=5277.04MB/s 
+
+Run #5 Data: Time=0.71 ms ; Speed=2820.87MB/s 
+
+- Average time: 0.64 ms
+- Average bandwidth: 3406.15 MB/s
+------------------------------------------------

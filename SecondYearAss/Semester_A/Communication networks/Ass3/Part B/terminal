@@ -1,0 +1,117 @@
+gidi@gidi:~/Desktop/Assignment3/part B2$ ./RUDP_Reciever -p 6454
+~~~~~~~~ RUDP Receiver ~~~~~~~~
+Socket created
+Connection established
+Received total date: 2097152
+Received total date: 2097152
+Received total date: 2097152
+Received total date: 2097152
+Received total date: 2097152
+received close request
+waiting for close
+connection closed
+
+
+~~~~~~~~ Statistics ~~~~~~~~
+Run #1 Data: Time=0.008516 S ; Speed=234.852043 MB/S
+Run #2 Data: Time=0.008787 S ; Speed=227.608968 MB/S
+Run #3 Data: Time=0.006891 S ; Speed=290.233638 MB/S
+Run #4 Data: Time=0.010070 S ; Speed=198.609732 MB/S
+Run #5 Data: Time=0.005985 S ; Speed=334.168755 MB/S
+
+Average time: 0.008050 S
+Average speed: 257.094627 MB/S
+
+
+-----------------------------
+Thank you for using our RUDP service
+gidi@gidi:~/Desktop/Assignment3/part B2$ sudo tc qdisc change dev lo root netem loss 2%
+[sudo] password for gidi: 
+gidi@gidi:~/Desktop/Assignment3/part B2$ ./RUDP_Reciever -p 6454
+~~~~~~~~ RUDP Receiver ~~~~~~~~
+Socket created
+Connection established
+Received total date: 2097152
+Received total date: 2097152
+Received total date: 2097152
+Received total date: 2097152
+Received total date: 2097152
+received close request
+waiting for close
+connection closed
+
+
+~~~~~~~~ Statistics ~~~~~~~~
+Run #1 Data: Time=0.006650 S ; Speed=300.751880 MB/S
+Run #2 Data: Time=0.006368 S ; Speed=314.070352 MB/S
+Run #3 Data: Time=0.006946 S ; Speed=287.935502 MB/S
+Run #4 Data: Time=0.006348 S ; Speed=315.059861 MB/S
+Run #5 Data: Time=0.006789 S ; Speed=294.594196 MB/S
+
+Average time: 0.006620 S
+Average speed: 302.482358 MB/S
+
+
+-----------------------------
+Thank you for using our RUDP service
+gidi@gidi:~/Desktop/Assignment3/part B2$ sudo tc qdisc change dev lo root netem loss 5%
+gidi@gidi:~/Desktop/Assignment3/part B2$ ./RUDP_Reciever -p 6454
+~~~~~~~~ RUDP Receiver ~~~~~~~~
+Socket created
+Connection established
+Received total date: 2097152
+Received total date: 2097152
+Received total date: 2097152
+Received total date: 2097152
+Received total date: 2097152
+received close request
+waiting for close
+connection closed
+
+
+~~~~~~~~ Statistics ~~~~~~~~
+Run #1 Data: Time=0.006642 S ; Speed=301.114122 MB/S
+Run #2 Data: Time=0.006349 S ; Speed=315.010238 MB/S
+Run #3 Data: Time=0.006503 S ; Speed=307.550361 MB/S
+Run #4 Data: Time=0.005579 S ; Speed=358.487184 MB/S
+Run #5 Data: Time=0.006271 S ; Speed=318.928401 MB/S
+
+Average time: 0.006269 S
+Average speed: 320.218061 MB/S
+
+
+-----------------------------
+Thank you for using our RUDP service
+gidi@gidi:~/Desktop/Assignment3/part B2$ sudo tc qdisc change dev lo root netem loss 10%
+gidi@gidi:~/Desktop/Assignment3/part B2$ ./RUDP_Reciever -p 6454
+~~~~~~~~ RUDP Receiver ~~~~~~~~
+Socket created
+^Z
+[8]+  Stopped                 ./RUDP_Reciever -p 6454
+gidi@gidi:~/Desktop/Assignment3/part B2$ ./RUDP_Reciever -p 6456
+~~~~~~~~ RUDP Receiver ~~~~~~~~
+Socket created
+Connection established
+Received total date: 2097152
+Received total date: 2097152
+Received total date: 2097152
+Received total date: 2097152
+Received total date: 2097152
+received close request
+waiting for close
+connection closed
+
+
+~~~~~~~~ Statistics ~~~~~~~~
+Run #1 Data: Time=0.007292 S ; Speed=274.273176 MB/S
+Run #2 Data: Time=0.007387 S ; Speed=270.745905 MB/S
+Run #3 Data: Time=0.009089 S ; Speed=220.046210 MB/S
+Run #4 Data: Time=0.012500 S ; Speed=160.000000 MB/S
+Run #5 Data: Time=0.008718 S ; Speed=229.410415 MB/S
+
+Average time: 0.008997 S
+Average speed: 230.895141 MB/S
+
+
+-----------------------------
+Thank you for using our RUDP service
