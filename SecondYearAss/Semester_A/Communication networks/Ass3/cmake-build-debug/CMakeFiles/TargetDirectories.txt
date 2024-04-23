@@ -1,3 +1,0 @@
-/Users/mac/Desktop/Computer Science/רשתות תקשורת/network_ex3-master/cmake-build-debug/CMakeFiles/network_ex3_master.dir
-/Users/mac/Desktop/Computer Science/רשתות תקשורת/network_ex3-master/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/mac/Desktop/Computer Science/רשתות תקשורת/network_ex3-master/cmake-build-debug/CMakeFiles/rebuild_cache.dir
